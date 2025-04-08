@@ -15,10 +15,10 @@ export default defineConfig({
       host: true,
       port: 4321,
       strictPort: true,
-      https: {
-        key: fs.readFileSync(path.resolve(__dirname, 'example.com+2-key.pem')),
-        cert: fs.readFileSync(path.resolve(__dirname, 'example.com+2-cert.pem')),
-      },
+      // https: {
+      //   key: fs.readFileSync(path.resolve(__dirname, 'example.com+2-key.pem')),
+      //   cert: fs.readFileSync(path.resolve(__dirname, 'example.com+2-cert.pem')),
+      // },
       allowedHosts: ['example.com','sub.example.com'],
     }
   }
