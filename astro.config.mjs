@@ -26,10 +26,6 @@ export default defineConfig({
   ],
   pages: [
     {
-      path: '/blog/*', 
-      component: './src/pages/blog/*.astro', 
-    },
-    {
       path: '/*', 
       component: './src/pages/*.astro', 
     },
