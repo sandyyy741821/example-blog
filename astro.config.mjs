@@ -8,26 +8,16 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  site: 'https://mainfrontendnet.netlify.app', 
+  site: 'https://mainfrontendnet.netlify.app',
   integrations: [mdx(), sitemap()],
   vite: {
     server: {
       host: true,
       port: 4321,
       strictPort: true,
-    }
+    },
   },
   build: {
-
     outDir: './dist',
   },
-  renderers: [
-    mdx(),
-  ],
-  pages: [
-    {
-      path: '/*', 
-      component: './src/pages/*.astro', 
-    },
-  ],
 });
