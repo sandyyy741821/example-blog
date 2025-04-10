@@ -1,9 +1,0 @@
-[build]
-command = "npm run build"
-cwd = "./"
-watch_dir = "./"
-publish = "dist"
-
-[build.environment]
-NODE_VERSION = "18"
-NPM_FLAGS = "--legacy-peer-deps"
