@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://example-frontend-6xa.pages.dev',
+  base: '/blog',
   integrations: [mdx(), sitemap()],
   vite: {
     server: {
