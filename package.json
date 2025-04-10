@@ -14,15 +14,15 @@
     "@astrojs/sitemap": "^3.3.0"
   },
   "devDependencies": {
-    "astro": "^5.6.1",
-    "typescript": "^5.3.3",
-    "@types/node": "^18.18.0",
     "@types/debug": "^4.1.7",
-    "@types/unist": "^2.0.6",
+    "@types/estree": "^1.0.5",
     "@types/hast": "^2.3.4",
     "@types/mdast": "^3.0.10",
-    "@types/estree": "^1.0.5",
     "@types/ms": "^0.7.31",
+    "@types/node": "^18.18.0",
+    "@types/unist": "^2.0.6",
+    "astro": "^5.6.1",
+    "typescript": "^5.3.3",
     "undici-types": "^5.26.4"
   }
 }

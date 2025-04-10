@@ -1,23 +1,18 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  site: 'https://mainfrontendnet.netlify.app',
+  site: 'https://example-frontend-6xa.pages.dev',
   integrations: [mdx(), sitemap()],
   vite: {
     server: {
-      host: true,
-      port: 4321,
-      strictPort: true,
+      host: 'localhost', 
+      port: 4321,        
+      strictPort: true,  
     },
   },
   build: {
-    outDir: './dist',
+    outDir: './public', 
   },
 });
